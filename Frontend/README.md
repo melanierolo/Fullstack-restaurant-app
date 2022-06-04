@@ -1,1 +1,2 @@
-# Restaurant-App-nextjs
+# Frontend-restaurant-app-
+nextjs- next-auth-graphql-apollo

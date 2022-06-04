@@ -71,10 +71,7 @@ function RestaurantList(props) {
           <CardImg
             top={true}
             style={{ height: 200 }}
-            src={
-              `http://localhost:1337` +
-              res.attributes.image.data[0].attributes.url
-            }
+            src={res.attributes.image.data[0].attributes.url}
           />
           <CardBody>
             <CardTitle tag="h5">{res.attributes.name}</CardTitle>

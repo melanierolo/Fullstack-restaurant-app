@@ -41,7 +41,7 @@ function Login(props) {
     if (isAuthenticated) {
       router.push("/"); // redirect if you're already logged
     }
-  }, []);
+  }, [isAuthenticated, router]);
 
   useEffect(() => {
     if (status === "authenticated") {
@@ -55,7 +55,7 @@ function Login(props) {
       );
       setUser(session.user.name);
     }
-  }, [status, session]);
+  }, [status, session, router, setUser]);
 
   function onChange(event) {
     updatedata({ ...data, [event.target.name]: event.target.value });
@@ -67,7 +67,6 @@ function Login(props) {
         <Col sm="12" md={{ size: 5, offset: 3 }}>
           <div className="paper">
             <div className="header">
-              <img src="" />
               <h1>Login</h1>
             </div>
             <section className="wrapper">
@@ -186,9 +185,6 @@ function Login(props) {
           }
           a {
             color: blue !important;
-          }
-          img {
-            margin: 15px 30px 10px 50px;
           }
         `}
       </style>
