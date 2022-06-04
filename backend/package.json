@@ -4,18 +4,21 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js -p $PORT",
+    "heroku-postbuild": "next build"
   },
   "dependencies": {
     "@strapi/plugin-documentation": "^4.1.11",
     "@strapi/plugin-graphql": "4.1.9",
     "@strapi/plugin-i18n": "4.1.9",
     "@strapi/plugin-users-permissions": "4.1.9",
+    "@strapi/provider-upload-cloudinary": "^4.1.12",
     "@strapi/strapi": "4.1.9",
     "better-sqlite3": "^7.4.6",
+    "pg": "^8.7.3",
+    "pg-connection-string": "^2.5.0",
     "stripe": "^9.1.0"
   },
   "author": {
