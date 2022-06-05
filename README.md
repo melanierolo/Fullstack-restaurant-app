@@ -57,3 +57,13 @@ This project was successfully carried out and it was develop for the course Full
 ### Documentation - Swagger
 
 [Gif](https://github.com/melanierolo/Fullstack-restaurant-app/blob/main/docu-Swagger.gif)
+
+## Deployment
+
+### Frontend:
+
+Vercel: https://melanie-rodas-fullstack-restaurant-jbjsign1o-melanierolo.vercel.app/
+
+### Backend:
+
+Heroku: https://melanie-backend-restaurant-app.herokuapp.com/
